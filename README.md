@@ -1,1 +1,1 @@
-# neurolab-html-css-js
+# lab-html-css-js
