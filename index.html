@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PW Skills | Counter</title>
-    <!-- icon -->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      sizes="16x16"
-      href="/images/favicon.ico"
-    />
-    <!-- imported the css file -->
-    <link rel="stylesheet" href="./styles.css" />
-    <!-- Font family import -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <main>
-      <nav class="nav_bar">
-        <div class="container">
-          <a href="https://pwskills.com/">
-            <img src="/images/pwskills-logo.png" alt="logo" class="nav_bar_logo"
-          /></a>
-        </div>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <section class="container">
-        <div class="counter">
-          <div class="counter_body">
-            <h1 class="counter_body_heading">Counter</h1>
-            <p id="counter" class="counter_count_display">0</p>
-            <div class="counter_button">
-              <button
-                id="decrement"
-                class="counter_decrement"
-                onclick="{decrementButton}"
-              >
-                - Decrement
-              </button>
-              <button
-                id="increment"
-                class="counter_increment"
-                onclick="{incrementButton}"
-              >
-                + Increment
-              </button>
+<!-- HEADER SECTION -->
+<div id="header">
+    <div class="container">
+
+        <nav>
+            <img src="images/Divyan.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-text">
+            <p>Machine Learning Engineer</p>
+            <h1>Hii, I am <span>Divyan</span><br>Narwani from India.</h1>
+        </div>
+
+    </div>
+</div>  
+
+
+<!-- ABOUT SECTION -->
+<div id="about">
+
+    <div class="container">
+
+        <div class="row" , style="margin-right: 120px;">
+
+            <div class="about-col-1">
+                <img src="images/user.png">
             </div>
-          </div>
-        </div>
-      </section>
-    </main>
 
-    <!-- imported js file below -->
-    <script src="./counter.js"></script>
-  </body>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi quis rerum ad debitis esse, vero nemo laudantium ab, architecto at perspiciatis dignissimos quaerat necessitatibus veritatis explicabo temporibus odio ducimus neque error voluptatem soluta magni? Tempore repellendus odit repudiandae consequatur dolor voluptatem fugiat sequi necessitatibus excepturi, eligendi, eveniet consequuntur beatae. Laboriosam et quidem commodi eligendi placeat a, reiciendis laudantium iusto adipisci doloremque. Impedit quisquam, autem provident architecto consequatur aut repellat doloremque, fugit, nulla ex corrupti numquam qui dolor dignissimos molestias aliquam.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links">Skills</p>
+                    <p class="tab-links">Education</p>
+                    <p class="tab-links">Experience</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
 </html>
