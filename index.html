@@ -49,17 +49,62 @@
                 <p style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi quis rerum ad debitis esse, vero nemo laudantium ab, architecto at perspiciatis dignissimos quaerat necessitatibus veritatis explicabo temporibus odio ducimus neque error voluptatem soluta magni? Tempore repellendus odit repudiandae consequatur dolor voluptatem fugiat sequi necessitatibus excepturi, eligendi, eveniet consequuntur beatae. Laboriosam et quidem commodi eligendi placeat a, reiciendis laudantium iusto adipisci doloremque. Impedit quisquam, autem provident architecto consequatur aut repellat doloremque, fugit, nulla ex corrupti numquam qui dolor dignissimos molestias aliquam.</p>
 
                 <div class="tab-titles">
-                    <p class="tab-links">Skills</p>
-                    <p class="tab-links">Education</p>
-                    <p class="tab-links">Experience</p>
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
                 </div>
 
+                <div class="tab-contents active-tab" id="Skills" >
+                    <ul>
+                        <li><span>Data Analytics</span><br>Analysing Data using Python, SQL and BI tool.</li>
+                        <li><span>Machine Learning</span><br>Machine Learning Model Development and Deployment.</li>
+                        <li><span>UI Designer</span><br>Designing Web/App Interfaces.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>May 2022 - June 2022</span><br>Graphic Design Intern at We Avec U, New Delhi.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2021 - 2025</span><br>B. Tech. in AI & DS<br>College of Technology and Engineering, Udaipur</li>
+                        <li><span>2021</span><br>Class XII - 86%<br>St. Paul's Sr. Sec. School, Abu Road</li>
+                        <li><span>2019</span><br>Class X - 91.6%<br>Sai Baba Public School, Abu Road</li>
+                    </ul>
+                </div>
             </div>
 
         </div>
     </div>
 
 </div>
+
+
+<!-- ----- Services Tab ------- -->
+
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
 
 </body>
 </html>
