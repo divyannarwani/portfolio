@@ -16,13 +16,15 @@
 
         <nav>
             <img src="images/Divyan.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
 
         <div class="header-text">
@@ -183,10 +185,11 @@
 
 
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="text" name="Email ID" placeholder="Your Email" required>
                     <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                    <span id="msg"></span>
                     <button class="btn btn2" type="submit">Submit</button>
                 </form>
             </div>
@@ -194,7 +197,7 @@
     </div>
 
     <div class="copyright">
-        <p>copyright © Divyan. Made with <i class="fa-solid fa-heart"></i> </p>
+        <p>copyright © Divyan Narwani. Made with <i class="fa-solid fa-heart"></i> </p>
     </div>
 </div>
 
@@ -224,6 +227,42 @@
 
 </script>
 
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-150px";
+    }
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzjakllvmPHpMy0Le6UcupTuNiKEnrIHEfmvx8iztT69AbQxUbhQAuxUoAksXislzyuIg/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </body>
 </html>
