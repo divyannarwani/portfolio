@@ -113,8 +113,15 @@ nav ul li a:hover::after{
 
 .about-col-2{
     flex-basis: 60%;
-    font-size: 24px;
+    font-size: 16px;
+    color: #ababab;
 }
+
+.about-col-2 p{
+    letter-spacing: 0.6px;
+}
+
+
 
 .sub-title{
     font-size: 60px;
@@ -415,9 +422,12 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
 
+    
+
 
     #header{
-        background-image: url(images/image_mq.png);
+        background-image: url(images/imagemq.png);
+        margin: 0;
     }
 
     .header-text{
@@ -438,7 +448,7 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 25px;
-        margin-right: 5px;
+        margin-right: 0px;
     }
 
     nav ul{

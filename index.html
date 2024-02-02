@@ -17,11 +17,11 @@
         <nav>
             <img src="images/Divyan.png" class="logo">
             <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Service</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#header" onclick="closemenu()">Home</a></li>
+                <li><a href="#about" onclick="closemenu()">About</a></li>
+                <li><a href="#services" onclick="closemenu()">Service</a></li>
+                <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -48,7 +48,13 @@
 
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi quis rerum ad debitis esse, vero nemo laudantium ab, architecto at perspiciatis dignissimos quaerat necessitatibus veritatis explicabo temporibus odio ducimus neque error voluptatem soluta magni? Tempore repellendus odit repudiandae consequatur dolor voluptatem fugiat sequi necessitatibus excepturi, eligendi, eveniet consequuntur beatae. Laboriosam et quidem commodi eligendi placeat a, reiciendis laudantium iusto adipisci doloremque. Impedit quisquam, autem provident architecto consequatur aut repellat doloremque, fugit, nulla ex corrupti numquam qui dolor dignissimos molestias aliquam.</p>
+                <p>
+
+                    👋 Hello there! I'm Divyan Narwani, a third-year B.Tech student specializing in AI and Data Science from College of Technology and Engineering, Udaipur.
+                    <br><br>
+                    My journey in technology started with a keen interest in graphic design and video editing, where I honed my creative skills. As I delved deeper into the world of data and intelligence, I discovered my love for machine learning, data visualization, and analysis.
+            
+                    With a solid foundation in machine learning algorithms, data visualization tools, and proficiency in HTML and CSS, I strive to create innovative solutions that blend the realms of art and technology. Join me on this exciting journey as I continue to learn, innovate, and contribute to the ever-evolving landscape of technology.</p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
@@ -60,7 +66,10 @@
                     <ul>
                         <li><span>Data Analytics</span><br>Analysing Data using Python, SQL and BI tool.</li>
                         <li><span>Machine Learning</span><br>Machine Learning Model Development and Deployment.</li>
-                        <li><span>UI Designer</span><br>Designing Web/App Interfaces.</li>
+                        <li><span>Frontend Development</span><br>Crafting sleek web experiences with HTML and CSS.</li>
+                        <li><span>UI/UX Design</span><br>Designing Web/App Interfaces.</li>
+                        <li><span>Graphic Design</span><br>Bringing ideas to life through striking visuals.</li>
+                        <li><span>Video Editing</span><br>Weaving seamless narratives through video editing.</li>
                     </ul>
                 </div>
 
@@ -96,20 +105,20 @@
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
-                <h2>Python Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloremque libero deserunt tempore aliquam voluptatum, labore perspiciatis illo ratione aliq</p>
+                <h2>Frontend Development</h2>
+                <p>Specializing in crafting websites with a focus on clean and modern designs, ensuring an effortless and user-friendly online experience. My goal is to translate ideas into visually appealing, functional interfaces that leave a lasting impression.</p>
                 <a href="maintainance.html">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-database"></i>
                 <h2>Data Analysis</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloremque libero deserunt tempore aliquam voluptatum, labore perspiciatis illo ratione aliq</p>
+                <p>I extract practical insights through straightforward analysis. This allows for informed decision-making based on a thorough understanding of the information at hand, making data-driven strategies a reliable cornerstone.</p>
                 <a href="maintainance.html">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-gears"></i>
                 <h2>ML Engineering</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloremque libero deserunt tempore aliquam voluptatum, labore perspiciatis illo ratione aliq</p>
+                <p>Adept at developing intelligent solutions through the application of ML. My strength lies in transforming raw data into meaningful predictions, harnessing the potential of ML to address real-world challenges and deliver effective data-driven solutions.</p>
                 <a href="maintainance.html">Learn more</a>
             </div>
         </div>
@@ -131,7 +140,7 @@
                 <img src="images/work image - Powerbi.jpg">
                 <div class="layer">
                     <h3>Power BI Dashboard</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel soluta recusandae labore quos aut.</p>
+                    <p>Created a HR Attrition analytics Dashboard using Power BI.<br>By analyzing data, I've been able to uncover trends and patterns that help organizations make informed decisions about employee attrition.</p>
                     <a href="maintainance.html"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -139,15 +148,15 @@
                 <img src="images/work image - Diabetes.jpg">
                 <div class="layer">
                     <h3>Diabetes Prediction</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel soluta recusandae labore quos aut.</p>
+                    <p>Designed a robust diabetes prediction model with a focus on accuracy and reliability, the model interprets key health indicators to provide early insights, aiding in proactive healthcare decision-making.</p>
                     <a href="maintainance.html"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/work image - UI_UX.jpg">
                 <div class="layer">
-                    <h3>UI/UX Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel soluta recusandae labore quos aut.</p>
+                    <h3>User Interfaces</h3>
+                    <p>Specialized in combining UI/UX design principles with frontend development to create seamless and visually appealing applications. Prioritizing user-centric experiences and smooth functionality.</p>
                     <a href="maintainance.html"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
